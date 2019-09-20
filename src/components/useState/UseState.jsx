@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { StyledSection, StyledHeader } from '../app/style'
+import UseStateInputText from './UseStateInputText'
 
 const UseState = ({ object, setObject }) => {
   const [rewriteProperty, setRewriteProperty] = useState({name: 'Elena', age: 23})
@@ -18,7 +19,10 @@ const UseState = ({ object, setObject }) => {
       </button>
       <div>the curent age is: {rewriteProperty.age}</div>
       <div>the curent name is: {rewriteProperty.name}</div>
+
+      <UseStateInputText/>
     </StyledSection>
+
   )
 }
 

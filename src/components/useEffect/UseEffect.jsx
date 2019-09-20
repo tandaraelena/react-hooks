@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { StyledSection, StyledHeader } from '../app/style'
 
 const UseEffect = ({data}) => {
+  const [ count, setCount ] = useState(0)
+
   return (
     <StyledSection>
       <StyledHeader>UseEffeeeect!!</StyledHeader>
@@ -11,6 +13,11 @@ const UseEffect = ({data}) => {
       <p>We can leave this array empty and that means our useEffect hook will run only once throughout the life of our component.</p>
       <p>We can skip the array, BUT useEffect will run after every render.</p>
       <div>here renders first item from data: {data && data[0].employee_name}</div>
+      <button onClick={() => {setCount(count + 1)}} >+</button>
+      <button onClick={() => {setCount(prev => prev - 1)}} >-</button>
+      <button onClick={() => {setCount(prev => prev + 5)}} >+5</button>
+      <button onClick={() => {setCount(0)}} >reset</button>
+      <div>{count}</div>
     </StyledSection>
   )
 }
