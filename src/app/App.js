@@ -39,6 +39,10 @@ console.log('check if useEffect run when object is called')
         <p>We can skip the array, BUT useEffect will run after every render.</p>
         <div>here renders first item from data: {data && data[0].employee_name}</div>
       </StyledSection>
+      <StyledSection>
+        <StyledHeader>useReducer!!</StyledHeader>
+        
+      </StyledSection>
     </div>
   );
 }
