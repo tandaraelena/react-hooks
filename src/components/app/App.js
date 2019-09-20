@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import UseState from '../useState/UseState';
-import UseEffect from '../useEffect/UseEffect';
+import UseEffectMouseContainer from '../useEffect/UseEffectMouseContainer';
 import UseReducer from '../useReducer/UseReducer';
 
 function App() {
@@ -18,7 +18,7 @@ console.log('check if useEffect run when object is called')
   return (
     <div className="App">
       <UseState object={object} setObject={setObject} />
-      <UseEffect data={data} />
+      <UseEffectMouseContainer data={data} />
       <UseReducer />
     </div>
   );

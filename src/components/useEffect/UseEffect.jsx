@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { StyledSection, StyledHeader } from '../app/style'
+import UseEffectMouse from './UseEffectMouse'
 
 const UseEffect = ({data}) => {
   const [ count, setCount ] = useState(0)
@@ -18,6 +19,7 @@ const UseEffect = ({data}) => {
       <button onClick={() => {setCount(prev => prev + 5)}} >+5</button>
       <button onClick={() => {setCount(0)}} >reset</button>
       <div>{count}</div>
+      <UseEffectMouse />
     </StyledSection>
   )
 }
