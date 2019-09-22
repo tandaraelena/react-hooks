@@ -3,6 +3,9 @@ import UseState from '../useState/UseState';
 import UseEffect from '../useEffect/UseEffect';
 import UseContext from '../useContext/UseContext';
 
+export const UserContext = React.createContext()
+export const AgeContext = React.createContext()
+
 function App() {
   const [object, setObject] = useState({name: 'Elena', age: 23})
   const [data, setData] = useState('')
@@ -19,7 +22,11 @@ console.log('check if useEffect run when object is called')
     <div className="App">
       <UseState object={object} setObject={setObject} />
       <UseEffect data={data} />
-      <UseContext />
+      <UserContext.Provider value={'Elena T'} >
+        <AgeContext.Provider value={'23'} >
+          <UseContext />
+        </AgeContext.Provider>
+      </UserContext.Provider>
     </div>
   );
 }

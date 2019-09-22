@@ -5,6 +5,6 @@ const Level1 = () => {
   return (
     <Level2 />
   )
-}
+}  
 
 export default Level1
