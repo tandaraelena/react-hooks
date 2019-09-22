@@ -1,9 +1,9 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import UseState from '../useState/UseState';
 import UseEffect from '../useEffect/UseEffect';
 import UseContext from '../useContext/UseContext';
 
-export const UserContext = React.createContext()
+export const UserContext = React.createContext(null)
 export const AgeContext = React.createContext()
 
 function App() {

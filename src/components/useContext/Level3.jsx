@@ -20,6 +20,7 @@ const Level3 = () => {
             )}
         }
       </UserContext.Consumer>
+      <div>Without useContext</div>
     </div>
   )
 }
