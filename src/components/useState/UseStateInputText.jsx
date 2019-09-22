@@ -9,7 +9,7 @@ const UseStateInputText = () => {
       <input 
         type='text'
         value={comment.name}
-        onChange={e => setComment({name: e.target.value})} 
+        onChange={e => setComment({ ...comment, name: e.target.value})} 
         placeholder='Your name is..'
         />
       <label>Leave your comment</label>
