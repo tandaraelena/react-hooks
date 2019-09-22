@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import UseState from '../useState/UseState';
 import UseEffect from '../useEffect/UseEffect';
-import UseReducer from '../useReducer/UseReducer';
+import UseContext from '../useContext/UseContext';
 
 function App() {
   const [object, setObject] = useState({name: 'Elena', age: 23})
@@ -19,7 +19,7 @@ console.log('check if useEffect run when object is called')
     <div className="App">
       <UseState object={object} setObject={setObject} />
       <UseEffect data={data} />
-      <UseReducer />
+      <UseContext />
     </div>
   );
 }
